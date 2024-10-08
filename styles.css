@@ -15,6 +15,15 @@ body {
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack sidebar and main content */
+    }
+    .sidebar {
+        margin-top: 20px; /* Add space between sidebar and main content */
+    }
+}
+
 /* Header Styles */
 header {
     display: flex;
@@ -54,7 +63,10 @@ header .profile-pic {
 .sidebar h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.sidebar ul li a:hover {
+    text-decoration: underline;
+    color: #2B6CB0; /* Darken color on hover */
+}
 /* About Section */
 .sidebar section:nth-of-type(1) h3 {
     color: #000000;
@@ -123,3 +135,4 @@ footer {
     padding: 20px;
     border-radius: 8px;
 }
+
